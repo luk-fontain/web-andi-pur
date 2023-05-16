@@ -1,0 +1,56 @@
+body {
+    background-color: #fff;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    background-color: rgb(116, 7, 52);
+    margin: 0%;
+    padding: 1em;
+}
+
+nav {
+    padding: 0%;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+}
+
+nav a {
+    list-style: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav li {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em;
+    display: inline;
+    font-weight: 300;
+    font-size: 1em;
+    font-family: Roboto, sans-serif;
+}
+
+.menu-left {
+    width: 50%;
+}
+
+.contact-card {
+    width: 50%;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+}
+
+footer {
+    width: 100%;
+    margin: 0%;
+    padding: 1em;
+    display: inline;
+}
+footer a {
+    list-style: none;
+    color: #7a7070;
+    text-decoration: none;
+}
