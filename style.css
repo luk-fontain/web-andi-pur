@@ -1,4 +1,4 @@
-body {
+/* body {
     background-color: #fff;
 }
 
@@ -20,7 +20,7 @@ nav {
 nav a {
     list-style: none;
     color: #fff;
-    text-decoration: none;
+    
 }
 
 nav li {
@@ -53,4 +53,201 @@ footer a {
     list-style: none;
     color: #7a7070;
     text-decoration: none;
+} */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --bg-page-color: #fff;
+    --nav-color: #690c36      ;
+    --text-color-title: #000;
+    --text-color-subtitle: #fefefe;
+    --text-color-global: #fff;
+  }
+  body {
+    background-color: var(--bg-page-color);
+    margin: 0 auto;
+  }
+
+  /* nav */
+
+  header {
+    width: 100%;
+    height: 70px;
+    background-color: var(--nav-color);
+    padding: 0.25rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .menu-left {
+    float: left;
+    ;
+  }
+  .contact-card {
+    float: right;
+    color: #fff;
+    margin-top: 1rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    font-family: Roboto, sans-serif;
+  }
+
+  .menu-left ul {
+    list-style-type: none;
+    margin: 0.25rem 1rem;
+    font-family: Roboto, sans-serif;
+  }
+  .menu-left li {
+    display: inline;
+    
+    /* padding-right: 2rem; */
+  }
+  .main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h2 {
+    font-weight: 100;
+    font-family: Raleway, sans-serif;
+    color: rgb(160,160,160)
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  main {
+    width: 100%;
+    margin-top: 3rem;
+    padding: 2rem 1rem;
+  }
+  main > section {
+    margin-bottom: 0.25rem;
+  }
+  /* article  Bereich */
+  article {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+  .main-comment {
+    margin: 0;
+    padding: 0.5rem 0;
+    line-height: 1.5rem;
+  }
+
+  .comment-footer {
+    background-color: transparent;
+
+    margin: 0;
+    padding: 0;
+  }
+
+  .comment-footer p {
+    font-weight: 700;
+  }
+
+  /* footer Bereich */
+  footer {
+    width: 100%;
+    height: 120px;
+    padding: 1em;
+  }
+  footer a {
+    list-style: none;
+    color: #7a7070;
+    text-decoration: none;
+}
+p { 
+    font-family: Roboto, sans-serif;
+    color: #323335
+}
+.slideshow-container {
+    background-color: #807d7ecd;
+    color: #fff;
+    padding: 60 0 60 0;
+    font-family: Raleway, sans-serif;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  /* padding: 8px 12px; */
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: #807d7ecd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #4d0909;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #931818;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
